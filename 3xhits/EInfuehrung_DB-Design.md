@@ -31,7 +31,7 @@ Jetzt wird ein Bauplan gezeichnet. Dafür nutzt man das sogenannte Entity-Relati
     1. Attribute: Das sind die Eigenschaften dieser Dinge (z. B. Vorname, Nachname beim Schüler; Titel beim Buch). Sie werden als Ellipsen (Ovale) an die Rechtecke gehängt.
     1. Beziehungen (Relationships): Sie zeigen, wie die Dinge miteinander zusammenhängen (z. B. "Schüler leiht Buch"). Sie werden als Rauten dargestellt.
 
-![Ein einfaches ER-Diagramm (Chen-Notation)](images\DB_Design_easyER.png)
+![Ein einfaches ER-Diagramm (Chen-Notation)](.\images\DB_Design_easyER.png)
 Ein einfaches ER-Diagramm (Chen-Notation)
 
 
