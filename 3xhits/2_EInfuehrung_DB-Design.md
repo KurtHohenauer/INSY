@@ -1,27 +1,8 @@
-# Einführung in die Welt der Datenbanken
-Stell dir vor, du baust das nächste Instagram oder Netflix. Wo speicherst du all die Benutzerprofile, Passwörter, Bilder und Likes? Wenn du sie einfach in einer Textdatei oder Excel-Tabelle speicherst, wird das System extrem langsam und fehleranfällig, sobald Millionen von Nutzern gleichzeitig darauf zugreifen.
-Genau hier kommen Datenbanksysteme ins Spiel. Sie speichern Daten sicher, strukturiert und erlauben es, rasend schnell nach Informationen zu suchen.
-
-### Welche Arten von Datenbanken gibt es?
-Im Laufe der Zeit haben sich verschiedene Modelle entwickelt, je nachdem, welche Art von Daten gespeichert werden soll:
-
-1. Relationale Datenbanken (Tabellen):<br> 
-Das ist das bekannteste und am weitesten verbreitete Modell 6. Die Daten werden hier, ähnlich wie in Excel, in Tabellen (sogenannten Relationen) mit Zeilen und Spalten gespeichert. Sie sind perfekt für strukturierte Daten (z. B. Kunden, Bestellungen). Beispiele: MySQL, PostgreSQL, Oracle .
-
-1. Dokumentenorientierte Datenbanken (NoSQL):<br> 
-Hier werden Daten nicht in starren Tabellen gespeichert, sondern als flexible Text-Dokumente (oft im JSON-Format). Das ist super für Daten, die nicht immer gleich aufgebaut sind. Beispiel: MongoDB.
-
-1. Graphen-Datenbanken:<br> 
-Diese speichern Daten als Netzwerkknoten und deren Verbindungen. Sie sind ideal für soziale Netzwerke, um Fragen zu beantworten wie: "Wer folgt wem?" (z.B. bei Twitter oder Instagram).
-
-1. Spaltenorientierte Datenbanken:<br> 
-Sie speichern Daten nicht zeilen-, sondern spaltenweise. Das macht sie extrem schnell, wenn man riesige Datenmengen für Statistiken auswerten will .
-
 ### Wie entwirft man eine Datenbank? (Datenbank-Design)
 Bevor man anfängt, am Computer Tabellen zu erstellen, muss man die Datenbank planen. Dieser Prozess nennt sich Datenbankentwurf und verläuft in mehreren Schritten.
 
 1. Die Anforderungsanalyse (Was brauchen wir?)<br>
-Zuerst muss man herausfinden: Welche Daten müssen überhaupt gespeichert werden? Und was soll später damit gemacht werden? 14 Beispiel: Für eine Schulbibliothek brauchen wir Bücher und Schüler.
+Zuerst muss man herausfinden: Welche Daten müssen überhaupt gespeichert werden? Und was soll später damit gemacht werden? Beispiel: Für eine Schulbibliothek brauchen wir Bücher und Schüler.
 
 1. Der Konzeptionelle Entwurf (Das ER-Modell)<br>
 Jetzt wird ein Bauplan gezeichnet. Dafür nutzt man das sogenannte Entity-Relationship-Modell (ER-Modell oder ERM). Es ist das bekannteste Modell, um die reale Welt stark vereinfacht grafisch darzustellen.
@@ -55,9 +36,11 @@ Damit man nicht zwei Schüler mit dem Namen "Thomas Müller" verwechselt, brauch
     ![Darstellung der Kardinalitäten](./images/DB_Design_easyKardinalitäten.png)
      Darstellung der Kardinalitäten
   
-Schritt 5: Der Logische Entwurf und Normalisierung (Aufräumen)
-Wenn der grafische Bauplan fertig ist, übersetzt man ihn in echte Tabellen (Logischer Entwurf) 33.Dabei macht man einen sogenannten Normalisierungsprozess. Das Ziel der Normalisierung ist es, die Datenbank sauber und fehlerfrei zu machen 30, 34. Man möchte:
-Redundanzen vermeiden: Das bedeutet, dass man Daten nicht unnötig doppelt speichern will (z. B. sollte der Name eines Autors nicht in jeder Buchzeile neu hingeschrieben werden, sondern nur einmal in einer Autoren-Tabelle stehen) 30, 34.
-Anomalien beheben: Wenn man den Namen eines Autors ändert, soll das nicht in 100 Zeilen manuell geändert werden müssen (Änderungs-Anomalie), sondern nur an genau einer Stelle 30, 35.
-Wenn all diese Schritte durchdacht sind, kann man sich an den Computer setzen und die Datenbank mit der Sprache SQL (Structured Query Language) in die Tat umsetzen! 36, 37
+1. Der Logische Entwurf und Normalisierung (Aufräumen)
+Wenn der grafische Bauplan fertig ist, übersetzt man ihn in echte Tabellen (Logischer Entwurf).Dabei macht man einen sogenannten Normalisierungsprozess.<br> 
+Das Ziel der Normalisierung ist es, die Datenbank sauber und fehlerfrei zu machen.
+    1. Redundanzen vermeiden: <br>Das bedeutet, dass man Daten nicht unnötig doppelt speichern will (z. B. sollte der Name eines Autors nicht in jeder Buchzeile neu hingeschrieben werden, sondern nur einmal in einer Autoren-Tabelle stehen).
+    1. Anomalien beheben: <br>Wenn man den Namen eines Autors ändert, soll das nicht in 100 Zeilen manuell geändert werden müssen (Änderungs-Anomalie), sondern nur an genau einer Stelle.
+
+Wenn all diese Schritte durchdacht sind, kann man sich an den Computer setzen und die Datenbank mit der Sprache SQL (Structured Query Language) in die Tat umsetzen!
 
