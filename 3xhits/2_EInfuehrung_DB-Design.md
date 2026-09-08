@@ -43,4 +43,3 @@ Das Ziel der Normalisierung ist es, die Datenbank sauber und fehlerfrei zu mache
     1. Anomalien beheben: <br>Wenn man den Namen eines Autors ändert, soll das nicht in 100 Zeilen manuell geändert werden müssen (Änderungs-Anomalie), sondern nur an genau einer Stelle.
 
 Wenn all diese Schritte durchdacht sind, kann man sich an den Computer setzen und die Datenbank mit der Sprache SQL (Structured Query Language) in die Tat umsetzen!
-
