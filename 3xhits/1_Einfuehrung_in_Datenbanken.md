@@ -1,7 +1,6 @@
 # Einführung in die Welt der Datenbanken
 
 Stell dir vor, du baust das nächste Instagram oder Netflix. Wo speicherst du all die Benutzerprofile, Passwörter, Bilder und Likes? Wenn du sie einfach in einer Textdatei oder Excel-Tabelle speicherst, wird das System extrem langsam und fehleranfällig, sobald Millionen von Nutzern gleichzeitig darauf zugreifen.
-
 Genau hier kommen Datenbanksysteme ins Spiel. Sie speichern Daten sicher, strukturiert und erlauben es, rasend schnell nach Informationen zu suchen.
 
 ### Welche Arten von Datenbanken gibt es?
@@ -24,6 +23,8 @@ NoSQL (Not only SQL) verzichtet auf starre Tabellen und ist stattdessen auf Flex
    *Beispiele: Cassandra, Scylla, HBase.*
 4. **Key-Value Datenbanken:** Dieser DB-Typ speichert einfache Schlüssel-Wert-Paare. Das ist die unkomplizierteste und schnellste Möglichkeit, um Daten im Arbeitsspeicher abzulegen und abzurufen (z. B. für Warenkörbe oder Caching). 
    *Beispiele: Redis, Valkey, Amazon DynamoDB.*
+5. **Vektordatenbanken:** Diese Systeme erleben durch Künstliche Intelligenz und Large Language Models (LLMs) gerade einen enormen Boom. Sie speichern Daten nicht als Text, sondern verwandeln sie in hochdimensionale Zahlenreihen (sogenannte Embeddings). Dadurch kann die Datenbank den *semantischen Sinn* von Inhalten verstehen. Das ist die technologische      Grundlage für Architekturen wie **RAG (Retrieval-Augmented Generation)** – beispielsweise, um lokale LLMs mit einer Firmen-Wissensdatenbank zu koppeln und so intelligente Systeme zur Beantwortung von technischen Support-Tickets zu bauen.
+*Beispiele: Pinecone, Milvus, Chroma, Qdrant.*
 
 #### 3. NewSQL Datenbanken
 NewSQL-Systeme sind der Versuch, das Beste aus beiden Welten zu kombinieren: Sie bieten die hohe Zuverlässigkeit und Datenkonsistenz (ACID-Prinzipien) der klassischen relationalen Datenbanken und kombinieren diese mit der massiven, cloud-basierten Skalierbarkeit von NoSQL-Systemen.
