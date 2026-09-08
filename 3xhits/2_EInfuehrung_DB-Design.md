@@ -44,4 +44,5 @@ Dabei wendet man auch einen sogenannten Normalisierungsprozess an. Das Ziel der 
 1. **Redundanzen vermeiden:** Das bedeutet, dass man Daten nicht unnötig doppelt speichern will (z. B. sollte der Name eines Autors nicht in jeder Buchzeile neu hingeschrieben werden, sondern nur einmal in einer separaten Autoren-Tabelle stehen).
 2. **Anomalien beheben:** Wenn man den Namen eines Autors ändert, soll das nicht in 100 Zeilen manuell geändert werden müssen (Änderungs-Anomalie), sondern nur an genau einer Stelle.
 
-Wenn all diese Schritte durchdacht sind, kann man sich an den Computer setzen und die Datenbank mit der Sprache **SQL (Structured Query Language)** in die Tat umsetzen!
+#### 4. physische Phase
+In dieser Phase wird der Logische Entwurf in der Datenbank mit der Sprache **SQL (Structured Query Language)** umgesetzt!
