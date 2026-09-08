@@ -4,7 +4,7 @@ Bevor man anfängt, am Computer Tabellen zu erstellen, muss man die Datenbank pl
 1. Die Anforderungsanalyse (Was brauchen wir?)<br>
 Zuerst muss man herausfinden: Welche Daten müssen überhaupt gespeichert werden? Und was soll später damit gemacht werden? Beispiel: Für eine Schulbibliothek brauchen wir Bücher und Schüler.
 
-1. Der Konzeptionelle Entwurf (Das ER-Modell)<br>
+2. Der Konzeptionelle Entwurf (Das ER-Modell)<br>
 Jetzt wird ein Bauplan gezeichnet. Dafür nutzt man das sogenannte Entity-Relationship-Modell (ER-Modell oder ERM). Es ist das bekannteste Modell, um die reale Welt stark vereinfacht grafisch darzustellen.
 
     Es besteht aus drei Hauptbausteinen:
@@ -15,16 +15,16 @@ Jetzt wird ein Bauplan gezeichnet. Dafür nutzt man das sogenannte Entity-Relati
     ![Ein einfaches ER-Diagramm (Chen-Notation)](./images/DB_Design_easyER.png)
     Ein einfaches ER-Diagramm (Chen-Notation)
 
-1. Die Schlüsselverteilung (Identifikation)<br>
+2.1. Die Schlüsselverteilung (Identifikation)<br>
 Damit man nicht zwei Schüler mit dem Namen "Thomas Müller" verwechselt, braucht jedes Objekt ein eindeutiges Erkennungsmerkmal.
 
-    Primärschlüssel (Primary Key):<br>
+    Primärschlüssel (Primary Key):
         Das ist ein Attribut, das jeden Datensatz absolut einzigartig macht. In der Schule ist das die Schülernummer, beim Buch die ISBN-Nummer. In der Grafik werden Primärschlüssel oft unterstrichen.
 
-    Fremdschlüssel (Foreign Key):<br>
+    Fremdschlüssel (Foreign Key):
         Wenn ein Schüler ein Buch ausleiht, wird in der Ausleih-Tabelle die Schülernummer gespeichert. Diese Nummer "verweist" dann als Fremdschlüssel auf den echten Schüler.
 
-1. Die Kardinalitäten (Wer mit wem und wie oft?)
+2.2. Die Kardinalitäten (Wer mit wem und wie oft?)
 
     Wir müssen festlegen, wie viele Objekte miteinander in Beziehung stehen können. Das nennt man Kardinalität 27, 28. Es gibt drei wichtige Arten 29, 30:
     1:1-Beziehung: Jedem Objekt aus Menge A ist genau ein Objekt aus Menge B zugeordnet.
